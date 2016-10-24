@@ -14,6 +14,7 @@
 		03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5F11DBDBC30009CB0A5 /* GoingViewController.swift */; };
 		03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */; };
 		03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */; };
+		03AAA6001DBE0BC5009CB0A5 /* SegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */; };
 		2D9A9D529D249DE05D7CAF80 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		03AAA5F11DBDBC30009CB0A5 /* GoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoingViewController.swift; sourceTree = "<group>"; };
 		03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
+		03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlExtension.swift; sourceTree = "<group>"; };
 		4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C473D6934D88ED2E8696E89 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BA743D850FFAAD3A3095EC7E /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */,
+				03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */,
 				03AAA5DE1DBB5C3F009CB0A5 /* AppDelegate.swift in Sources */,
 				03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */,
+				03AAA6001DBE0BC5009CB0A5 /* SegmentedControlExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,16 @@ class GoingViewController: UIViewController {
         gradient.colors = [UIColor(netHex: 0x00d2ff).CGColor,UIColor(netHex:0x3a7bd5).CGColor ]
         tabBarView.layer.insertSublayer(gradient, atIndex: 0)
         
+        transportTypePicker.removeBorders()
+        
+        for  borderview in transportTypePicker.subviews {
+            
+            let upperBorder: CALayer = CALayer()
+            upperBorder.backgroundColor = UIColor.init(red: 215/255.0, green: 0.0, blue: 30/255.0, alpha: 1.0).CGColor
+            upperBorder.frame = CGRectMake(0, borderview.frame.size.height-1, borderview.frame.size.width, 1.0);
+            borderview.layer .addSublayer(upperBorder);
+            
+        }
     
         
     }
