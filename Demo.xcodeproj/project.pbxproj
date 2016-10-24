@@ -12,6 +12,8 @@
 		03AAA5E51DBB5C3F009CB0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AAA5E41DBB5C3F009CB0A5 /* Assets.xcassets */; };
 		03AAA5E81DBB5C3F009CB0A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AAA5E61DBB5C3F009CB0A5 /* LaunchScreen.storyboard */; };
 		03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5F11DBDBC30009CB0A5 /* GoingViewController.swift */; };
+		03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */; };
+		03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */; };
 		2D9A9D529D249DE05D7CAF80 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		03AAA5E71DBB5C3F009CB0A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03AAA5E91DBB5C3F009CB0A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03AAA5F11DBDBC30009CB0A5 /* GoingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoingViewController.swift; sourceTree = "<group>"; };
+		03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
 		4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C473D6934D88ED2E8696E89 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BA743D850FFAAD3A3095EC7E /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 		03AAA5EF1DBDBBE4009CB0A5 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				03AAA5FC1DBDFB9E009CB0A5 /* Extension */,
 				03AAA5F01DBDBC10009CB0A5 /* Going */,
 			);
 			name = MVC;
@@ -83,8 +88,17 @@
 			isa = PBXGroup;
 			children = (
 				03AAA5F11DBDBC30009CB0A5 /* GoingViewController.swift */,
+				03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */,
 			);
 			name = Going;
+			sourceTree = "<group>";
+		};
+		03AAA5FC1DBDFB9E009CB0A5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		05D7080545EE0D79DFBC8503 /* Pods */ = {
@@ -226,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */,
 				03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */,
 				03AAA5DE1DBB5C3F009CB0A5 /* AppDelegate.swift in Sources */,
+				03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
