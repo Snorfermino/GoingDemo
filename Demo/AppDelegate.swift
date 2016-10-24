@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GoogleMaps
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        GMSServices.provideAPIKey("AIzaSyDnWTZo3ae8idlAbGWQWccygSJGy4CbwYQ")
+        
+        let appearance = UINavigationBar.appearance()
+        
+        
+        appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Menlo-Regular", size: 18)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Menlo-Regular", size: 18)!, NSForegroundColorAttributeName: UIColor.blackColor()], forState: .Normal)
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        // Sets shadow (line below the bar) to a blank image
+        UINavigationBar.appearance().shadowImage = UIImage()
+        // Sets the translucent background color
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+        // Set translucent. (Default value is already true, so this can be removed if desired.)
+        UINavigationBar.appearance().translucent = true
         return true
     }
 
