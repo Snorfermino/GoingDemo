@@ -8,4 +8,5 @@ target 'Demo' do
   # Pods for Demo
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'NXTSegmentedControl'
 end

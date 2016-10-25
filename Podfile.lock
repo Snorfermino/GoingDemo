@@ -6,15 +6,18 @@ PODS:
     - GoogleMaps/Base (= 2.0.1)
   - GooglePlaces (2.0.1):
     - GoogleMaps/Base (= 2.0.1)
+  - NXTSegmentedControl (1.0.5)
 
 DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
+  - NXTSegmentedControl
 
 SPEC CHECKSUMS:
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   GooglePlaces: 72fab1d1651c6df0322f2aad245ffb15b80d3c56
+  NXTSegmentedControl: 84816f67dc3956bfd4ce64df273793acee677abb
 
-PODFILE CHECKSUM: 64b3f760f349670e9f26b5fe4d2b1cff2740d2af
+PODFILE CHECKSUM: 207e4b7d047ec0414be0e4a98ff013076da4fec1
 
 COCOAPODS: 1.0.1

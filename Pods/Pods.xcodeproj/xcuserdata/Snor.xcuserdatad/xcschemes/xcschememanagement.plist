@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>NXTSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Demo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6B241D84964029FA5DDC4EC5BE191062</key>
+		<key>85F9431203D7F98E9B4B461F434874F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9720E4EC3FCCF427B0484CE28ECA6531</key>
 		<dict>
 			<key>primary</key>
 			<true/>

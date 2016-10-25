@@ -1,0 +1,6 @@
+framework module NXTSegmentedControl {
+  umbrella header "NXTSegmentedControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

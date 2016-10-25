@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="437" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-8d-4ta">
+                    <frame key="frameInset" width="437" height="74"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dv6-8d-4ta" id="D42-2Y-BiS">
+                        <frame key="frameInset" width="437" height="73"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Current Location" translatesAutoresizingMaskIntoConstraints="NO" id="nhb-ye-Uyj">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9n2-P0-gYZ"/>
+                                    <constraint firstAttribute="width" constant="160" id="AGJ-ba-DMO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Destination" translatesAutoresizingMaskIntoConstraints="NO" id="MR0-S7-EBZ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NN9-u5-6s2"/>
+                                    <constraint firstAttribute="width" constant="144" id="re5-Lx-i2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="destinationLocation" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-VH-0O3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="W9j-6f-gww"/>
+                                    <constraint firstAttribute="width" constant="16" id="mQD-q9-OwA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pickupLocation" translatesAutoresizingMaskIntoConstraints="NO" id="CYj-lx-cR8">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="Xsg-nr-hdL"/>
+                                    <constraint firstAttribute="height" constant="16" id="anO-Pa-7Qd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cwb-VH-0O3" firstAttribute="top" secondItem="CYj-lx-cR8" secondAttribute="top" id="0KF-5E-UYk"/>
+                            <constraint firstItem="CYj-lx-cR8" firstAttribute="top" secondItem="D42-2Y-BiS" secondAttribute="top" constant="10" id="Jnm-UT-y8K"/>
+                            <constraint firstItem="nhb-ye-Uyj" firstAttribute="top" secondItem="D42-2Y-BiS" secondAttribute="top" id="NOq-zJ-wKs"/>
+                            <constraint firstItem="CYj-lx-cR8" firstAttribute="leading" secondItem="D42-2Y-BiS" secondAttribute="leading" constant="8" id="TN0-Tv-uEm"/>
+                            <constraint firstItem="MR0-S7-EBZ" firstAttribute="top" secondItem="nhb-ye-Uyj" secondAttribute="top" id="oKL-tc-WK4"/>
+                            <constraint firstItem="MR0-S7-EBZ" firstAttribute="leading" secondItem="cwb-VH-0O3" secondAttribute="trailing" constant="8" id="t98-kl-4gV"/>
+                            <constraint firstItem="nhb-ye-Uyj" firstAttribute="leading" secondItem="CYj-lx-cR8" secondAttribute="trailing" constant="8" id="tSY-qL-oqX"/>
+                            <constraint firstItem="cwb-VH-0O3" firstAttribute="leading" secondItem="CYj-lx-cR8" secondAttribute="trailing" constant="199" id="xEh-vM-CH5"/>
+                        </constraints>
+                    </tableViewCellContentView>
+                </tableViewCell>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="56.5" y="-245"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="destinationLocation" width="30" height="30"/>
+        <image name="pickupLocation" width="30" height="30"/>
+    </resources>
+</document>

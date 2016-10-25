@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03964DBC1DBF52D500DE0F51 /* TextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03964DBB1DBF52D500DE0F51 /* TextViewExtension.swift */; };
+		03964DBE1DBF5EEE00DE0F51 /* DestinationCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03964DBD1DBF5EEE00DE0F51 /* DestinationCustomView.xib */; };
 		03AAA5DE1DBB5C3F009CB0A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5DD1DBB5C3F009CB0A5 /* AppDelegate.swift */; };
 		03AAA5E31DBB5C3F009CB0A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03AAA5E11DBB5C3F009CB0A5 /* Main.storyboard */; };
 		03AAA5E51DBB5C3F009CB0A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03AAA5E41DBB5C3F009CB0A5 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03964DBB1DBF52D500DE0F51 /* TextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewExtension.swift; sourceTree = "<group>"; };
+		03964DBD1DBF5EEE00DE0F51 /* DestinationCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DestinationCustomView.xib; sourceTree = "<group>"; };
 		03AAA5DA1DBB5C3F009CB0A5 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03AAA5DD1DBB5C3F009CB0A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03AAA5E21DBB5C3F009CB0A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				03AAA5E41DBB5C3F009CB0A5 /* Assets.xcassets */,
 				03AAA5E61DBB5C3F009CB0A5 /* LaunchScreen.storyboard */,
 				03AAA5E91DBB5C3F009CB0A5 /* Info.plist */,
+				03964DBD1DBF5EEE00DE0F51 /* DestinationCustomView.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			children = (
 				03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */,
 				03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */,
+				03964DBB1DBF52D500DE0F51 /* TextViewExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -151,11 +157,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tien Dat";
 				TargetAttributes = {
 					03AAA5D91DBB5C3E009CB0A5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -184,6 +191,7 @@
 			files = (
 				03AAA5E81DBB5C3F009CB0A5 /* LaunchScreen.storyboard in Resources */,
 				03AAA5E51DBB5C3F009CB0A5 /* Assets.xcassets in Resources */,
+				03964DBE1DBF5EEE00DE0F51 /* DestinationCustomView.xib in Resources */,
 				03AAA5E31DBB5C3F009CB0A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +254,7 @@
 				03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */,
 				03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */,
 				03AAA5DE1DBB5C3F009CB0A5 /* AppDelegate.swift in Sources */,
+				03964DBC1DBF52D500DE0F51 /* TextViewExtension.swift in Sources */,
 				03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */,
 				03AAA6001DBE0BC5009CB0A5 /* SegmentedControlExtension.swift in Sources */,
 			);
@@ -287,8 +296,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -333,8 +344,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -353,6 +366,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -367,6 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Snor.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -379,6 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Snor.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
