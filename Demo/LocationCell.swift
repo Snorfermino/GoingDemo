@@ -13,35 +13,47 @@ class LocationCell: UITableViewCell {
     @IBOutlet weak var locationTextview: UITextView!
     @IBOutlet weak var destinationTextview: UITextView!
     
-    @IBOutlet weak var locationTVHeight: NSLayoutConstraint!
+
     
-    @IBOutlet weak var destinationTVHeight: NSLayoutConstraint!
+    @IBOutlet weak var locationView: UIView!
     
-    @IBOutlet weak var locationTVWidth: NSLayoutConstraint!
     
-    @IBOutlet weak var destinationTVWidth: NSLayoutConstraint!
+    @IBOutlet weak var destinationView: UIView!
+    
+    
+    @IBOutlet weak var locationViewHeight: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var destinationViewHeight: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var locationViewWidth: NSLayoutConstraint!
+    
+    @IBOutlet weak var destinationViewWidth: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var LoctionViewWidthRatio: NSLayoutConstraint!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         locationTextview.delegate = self
         destinationTextview.delegate = self
+        locationTextview.tag = 1
+        destinationTextview.tag = 2
+        locationViewHeight.constant = (locationTextview.font?.lineHeight)! * 2.5
+        destinationViewHeight.constant = (destinationTextview.font?.lineHeight)! * 2.5
         
-//        locationTextview.textContainer.maximumNumberOfLines = 2
-//        locationTextview.textContainer.lineBreakMode = .byWordWrapping
-        
-        //let  numLines = 2
-        locationTVHeight.constant =  (locationTextview.font?.lineHeight)! * 2.5
-        destinationTVHeight.constant = (locationTextview.font?.lineHeight)! * 2.5
-         
-//        let fixedWidth = locationTextview.frame.size.width
-//        let newSize = locationTextview.sizeThatFits(CGSize(width: fixedWidth, height: numLines))
-//        var newFrame = locationTextview.frame
-//        newFrame.size = CGSize(width: CGFloat(fmaxf(Float(newSize.width), Float(fixedWidth))),height: newSize.height);
-//        locationTextview.frame = newFrame;
-        
-        
-        
+    }
+    
+    func animation() {
+        self.LoctionViewWidthRatio.constant = 100
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(4)
+        setNeedsDisplay()
+        CATransaction.commit()
     }
     
     
@@ -57,14 +69,50 @@ extension LocationCell: UITextViewDelegate {
     
     
     func textViewDidEndEditing(_ textView: UITextView) {
-        textView.setContentOffset(CGPoint(x: 0.0, y: 0.0),animated: true)
+                switch textView.tag {
+        case 1:
+            UIView.animate(withDuration: 1) {
+                
+                //self.locationViewWidth.constant = (textSize?.width)!
+                
+                textView.textContainer.maximumNumberOfLines = 2
+                textView.textContainer.lineBreakMode = .byTruncatingTail
+                //textView.setContentOffset(CGPoint(x: 0.0, y: 0.0),animated: true)
+                textView.scrollToTop()
+
+                
+            }
+        case 2:
+            UIView.animate(withDuration: 1) {
+                
+               // self.destinationViewWidth.constant = (textSize?.width)!
+                textView.textContainer.maximumNumberOfLines = 2
+                
+                textView.textContainer.lineBreakMode = .byTruncatingTail
+                textView.setContentOffset(CGPoint(x: 0.0, y: 0.0),animated: true)
+
+                
+            }
+        default:
+                print("something")
+        }
+        
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        UIView.animate(withDuration: 0.5) { 
-            self.locationTVWidth.constant = 190
-            self.destinationTVWidth.constant = 100
-        }
+        
+//        let fixedWidth = destinationTextview.frame.size.width
+//        destinationTextview.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+//        let newSize = destinationTextview.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
+//        var newFrame = destinationTextview.frame
+//        newFrame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
+//        destinationTextview.frame = newFrame
+        
+        textView.textContainer.maximumNumberOfLines = 10
+        
+               
+        animation()
+       
         let content = textView.text!
         switch content {
         case "Current Location":

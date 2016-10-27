@@ -13,4 +13,8 @@ extension UITextView {
         let range = NSMakeRange((text as NSString).length - 1, 1);
         scrollRangeToVisible(range);
     }
+    func scrollToTop() {
+        let range = NSMakeRange(0, 0);
+        scrollRangeToVisible(range);
+    }
 }

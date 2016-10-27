@@ -17,6 +17,12 @@
 		03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */; };
 		03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */; };
 		03AAA6001DBE0BC5009CB0A5 /* SegmentedControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */; };
+		03E286521DC07C7E00C79024 /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03E286511DC07C7E00C79024 /* SF-UI-Text-Medium.otf */; };
+		03E286541DC07F9B00C79024 /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03E286531DC07F9B00C79024 /* SF-UI-Text-Regular.otf */; };
+		03E286561DC0828100C79024 /* SF-UI-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03E286551DC0828100C79024 /* SF-UI-Text-Semibold.otf */; };
+		03E286591DC092D500C79024 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E286581DC092D500C79024 /* RegisterViewController.swift */; };
+		03E2865B1DC09BD100C79024 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2865A1DC09BD100C79024 /* TextFieldExtension.swift */; };
+		03E2865E1DC0BA1F00C79024 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2865D1DC0BA1F00C79024 /* CodeViewController.swift */; };
 		2D9A9D529D249DE05D7CAF80 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,12 @@
 		03AAA5F91DBDEC38009CB0A5 /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
 		03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlExtension.swift; sourceTree = "<group>"; };
+		03E286511DC07C7E00C79024 /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Medium.otf"; path = "Assets.xcassets/SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		03E286531DC07F9B00C79024 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Regular.otf"; path = "Assets.xcassets/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		03E286551DC0828100C79024 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Text-Semibold.otf"; path = "Assets.xcassets/SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
+		03E286581DC092D500C79024 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		03E2865A1DC09BD100C79024 /* TextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		03E2865D1DC0BA1F00C79024 /* CodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		4DEE63362A9C30B287B7C021 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C473D6934D88ED2E8696E89 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BA743D850FFAAD3A3095EC7E /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +87,9 @@
 				03AAA5DD1DBB5C3F009CB0A5 /* AppDelegate.swift */,
 				03AAA5E11DBB5C3F009CB0A5 /* Main.storyboard */,
 				03AAA5E41DBB5C3F009CB0A5 /* Assets.xcassets */,
+				03E286511DC07C7E00C79024 /* SF-UI-Text-Medium.otf */,
+				03E286531DC07F9B00C79024 /* SF-UI-Text-Regular.otf */,
+				03E286551DC0828100C79024 /* SF-UI-Text-Semibold.otf */,
 				03AAA5E61DBB5C3F009CB0A5 /* LaunchScreen.storyboard */,
 				03AAA5E91DBB5C3F009CB0A5 /* Info.plist */,
 				03964DBD1DBF5EEE00DE0F51 /* DestinationCustomView.xib */,
@@ -85,6 +100,8 @@
 		03AAA5EF1DBDBBE4009CB0A5 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				03E2865C1DC0BA1200C79024 /* Code */,
+				03E286571DC092B800C79024 /* Register */,
 				03AAA5FC1DBDFB9E009CB0A5 /* Extension */,
 				03AAA5F01DBDBC10009CB0A5 /* Going */,
 			);
@@ -106,8 +123,25 @@
 				03AAA5FD1DBDFBB4009CB0A5 /* HexColorExtension.swift */,
 				03AAA5FF1DBE0BC5009CB0A5 /* SegmentedControlExtension.swift */,
 				03964DBB1DBF52D500DE0F51 /* TextViewExtension.swift */,
+				03E2865A1DC09BD100C79024 /* TextFieldExtension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		03E286571DC092B800C79024 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				03E286581DC092D500C79024 /* RegisterViewController.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		03E2865C1DC0BA1200C79024 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				03E2865D1DC0BA1F00C79024 /* CodeViewController.swift */,
+			);
+			name = Code;
 			sourceTree = "<group>";
 		};
 		05D7080545EE0D79DFBC8503 /* Pods */ = {
@@ -189,9 +223,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E286561DC0828100C79024 /* SF-UI-Text-Semibold.otf in Resources */,
 				03AAA5E81DBB5C3F009CB0A5 /* LaunchScreen.storyboard in Resources */,
 				03AAA5E51DBB5C3F009CB0A5 /* Assets.xcassets in Resources */,
+				03E286541DC07F9B00C79024 /* SF-UI-Text-Regular.otf in Resources */,
 				03964DBE1DBF5EEE00DE0F51 /* DestinationCustomView.xib in Resources */,
+				03E286521DC07C7E00C79024 /* SF-UI-Text-Medium.otf in Resources */,
 				03AAA5E31DBB5C3F009CB0A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AAA5FA1DBDEC38009CB0A5 /* LocationCell.swift in Sources */,
+				03E2865B1DC09BD100C79024 /* TextFieldExtension.swift in Sources */,
 				03AAA5F21DBDBC30009CB0A5 /* GoingViewController.swift in Sources */,
+				03E286591DC092D500C79024 /* RegisterViewController.swift in Sources */,
 				03AAA5DE1DBB5C3F009CB0A5 /* AppDelegate.swift in Sources */,
 				03964DBC1DBF52D500DE0F51 /* TextViewExtension.swift in Sources */,
+				03E2865E1DC0BA1F00C79024 /* CodeViewController.swift in Sources */,
 				03AAA5FE1DBDFBB4009CB0A5 /* HexColorExtension.swift in Sources */,
 				03AAA6001DBE0BC5009CB0A5 /* SegmentedControlExtension.swift in Sources */,
 			);
@@ -377,7 +417,9 @@
 			baseConfigurationReference = 6C473D6934D88ED2E8696E89 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Snor.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,7 +432,9 @@
 			baseConfigurationReference = BA743D850FFAAD3A3095EC7E /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Snor.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,7 +12,7 @@ import NXTSegmentedControl
 class GoingViewController: UIViewController {
 
     
-    
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var tabBarView: UIView!
     
@@ -22,6 +22,8 @@ class GoingViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        
         self.transportTypePicker.layer.cornerRadius = 5.0;
         self.transportTypePicker.layer.borderColor = UIColor.white.cgColor
         self.transportTypePicker.layer.borderWidth = 1.0
@@ -39,7 +41,7 @@ class GoingViewController: UIViewController {
         
         transportTypePicker.removeBorders()
         
-        locationDestinationTableView.estimatedRowHeight = 112
+        locationDestinationTableView.estimatedRowHeight = 84
         locationDestinationTableView.rowHeight  = UITableViewAutomaticDimension
         
         
